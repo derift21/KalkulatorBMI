@@ -56,7 +56,10 @@ footer {
   margin: 0;
 }
 #hasil .wrapper.penyakit {
-  background: rgb(181 162 162);
+  color: brown;
+  background: rgb(181 162 162);  
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4), 0px 1px 2px red;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
 #hasil #bmi_status {
   font-size: 1.5rem;
@@ -102,7 +105,7 @@ footer {
   .main-content {
     width: 480px;
     margin-top: 15px;
-    border-radius: 5px 5px 20px 20px;
+    border-radius: 8px 8px 20px 20px;
   }
 }
 
