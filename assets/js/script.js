@@ -63,10 +63,12 @@ function hitungBMI(){
         document.querySelector("#pesan").innerHTML= psn;
         document.querySelector("#saran").innerHTML= saran;
 
-        if(penyakit!==""){
+        if(penyakit!==""){            
+            document.getElementById('#hasil .wrapper').style.box-shadow = 'rgb(93 50 50 / 25%) 0px 30px 60px -12px inset, rgb(255 0 0 / 30%) 0px 18px 36px -18px inset';
             document.querySelector(".wrapper.penyakit").style.display = 'block';
             document.querySelector("#penyakit").innerHTML= penyakit;
         }else{
+            document.getElementById('#hasil .wrapper').style.box-shadow = 'rgb(50 89 93 / 25%) 0px 30px 60px -12px inset, rgb(0 6 255 / 30%) 0px 18px 36px -18px inset';
             document.querySelector(".wrapper.penyakit").style.display = 'none';
         }
         
