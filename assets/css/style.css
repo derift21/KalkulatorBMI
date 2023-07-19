@@ -21,6 +21,7 @@ footer {
   background: linear-gradient(270deg, transparent, #8080803d, transparent);
   text-align: center;
   padding: 10px;
+  margin-top: 25px;
 }
 
 #hasil {
