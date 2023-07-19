@@ -135,6 +135,13 @@ footer {
   padding: 4px;
   margin-top: -4px;
 }
+.form-group .radio {
+  display: inline-flex;
+}
+.form-group .radio .cbcontainer {
+  width: 50px;
+  margin-bottom: 10px;
+}
 
 button {
   padding: 5px 15px;
@@ -167,17 +174,6 @@ button.green:hover {
   }
 }
 
-.radio {
-  display: inline-flex;
-}
-.radio .cbcontainer {
-  width: 50px;
-  margin-bottom: 10px;
-}
-.unit {
-  margin-left: -27px;
-  color: #888;
-}
 .m-0 {
   margin: 0
 }
