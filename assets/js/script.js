@@ -3,11 +3,11 @@ function hitungBMI(){
     let form = document.querySelector("#form");
     let hasil = document.querySelector("#hasil");
     let jk = document.querySelector('input[name="sex"]:checked').value;
-    var us = document.getElementById('_umur').value;
+    var us = document.getElementById('_us').value;
     var bb = document.getElementById('_bb').value;
     var tb = document.getElementById('_tb').value;
 
-    if(jk=="" || us==""||us==0||isNaN(us)) {
+    if(jk==""|| us==""||us==0||isNaN(us)) {
         alert("Usia dan jenis kelamin wajib diisi dengan benar");
     }else if(bb==""||bb==0||isNaN(bb)){
         alert("Berat badan wajib diisi dengan benar");
@@ -54,14 +54,13 @@ function hitungBMI(){
 
         form.style.display = 'none';
         hasil.style.display = 'block';
-        // hasil.innerHTML = "<header><h1>Hasil<i onclick='closeBMI()'>&times;</i></h1></header><div class='wrapper'><p class='bmi_status'>"+stat_bb+"</p><p class='bmi_score'>"+(bmi).toFixed(1)+"</p><br>"+ket+"</div>";
-
+        
         document.querySelector("#person").innerHTML="("+jk+" "+us+" thn)";
         document.querySelector("#bmi_status").innerHTML= stat_bb;
         document.querySelector("#bmi_score").innerHTML= (bmi).toFixed(1);
         document.querySelector("#bmi_ket").innerHTML= ket;
         document.querySelector("#range").innerHTML= range;
-        document.querySelector("#psn").innerHTML= psn;
+        document.querySelector("#pesan").innerHTML= psn;
         document.querySelector("#saran").innerHTML= saran;
 
         if(penyakit!==""){
@@ -70,7 +69,7 @@ function hitungBMI(){
         }else{
             document.querySelector(".wrapper.penyakit").style.display = 'none';
         }
-
+        
         // console.log(stat_bb);
         // console.log('BMI = '+(bmi).toFixed(1));
         // console.log(ket);
@@ -80,9 +79,6 @@ function hitungBMI(){
     }
 }
 
-function reset(){
-    document.getElementById("formBMI").reset();
-}
 function closeBMI(){
     form.style.display = 'block';
     hasil.style.display = 'none';
