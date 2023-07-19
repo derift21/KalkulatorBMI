@@ -42,7 +42,6 @@ footer {
 #hasil .wrapper {  
   text-align: center;
   margin: 0;
-  box-shadow: rgb(93 50 50 / 25%) 0px 30px 60px -12px inset, rgb(255 0 0 / 30%) 0px 18px 36px -18px inset;
 }
 #hasil .wrapper.penyakit {
   background: rgb(181 162 162);
