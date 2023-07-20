@@ -9,7 +9,8 @@ function hitungBMI(){
 
     // Validasi form
     if(jk==""|| us==""||us==0||isNaN(us)) {
-        alert("Usia dan jenis kelamin wajib diisi dengan benar");
+        // alert("Usia dan jenis kelamin wajib diisi dengan benar");
+        showModal("Usia dan jenis kelamin wajib diisi dengan benar");
     }else if(bb==""||bb==0||isNaN(bb)){
         alert("Berat badan wajib diisi dengan benar");
     }else if(tb==""||tb==0||isNaN(tb)){
@@ -80,6 +81,19 @@ function hitungBMI(){
         // console.log(range);
         // console.log(psn);
         // console.log(saran);
+    }
+}
+
+let modal = document.getElementById("modal-alert");
+let closem = document.querySelector(".close");
+let modalText = document.querySelector("#modalText");
+function showModal(message) {
+    modal.style.display = "block";
+    modalText.innerHTML = message;
+}
+window.onclick = function (event) {
+    if (event.target == closem) {
+        modal.style.display = "none";
     }
 }
 

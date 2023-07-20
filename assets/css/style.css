@@ -58,6 +58,12 @@ footer {
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4), 0px 1px 2px red;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
+#hasil .wrapper.penyakit h4 {
+  border-bottom: 2px solid;
+  border-radius: 100%;
+  margin-bottom: 5px;
+  padding-bottom: 8px;
+}
 #hasil #bmi_status {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -157,6 +163,8 @@ footer {
   /* margin-right: 8px; */
   padding: 4px;
   margin-top: -4px;
+  border-radius: 8px;
+  border: 1px solid #ffdede;
 }
 .form-group .radio {
   display: inline-flex;
@@ -172,6 +180,7 @@ button {
   min-width: 100px;
   border: 0.1px solid transparent;
   cursor: pointer;
+  border-radius: 8px;
 }
 button.green {
   background-color: #27872f;
@@ -195,6 +204,95 @@ button.green:hover {
     padding-right: 0;
     padding-left: 0;   
   }
+}
+
+/* Modal Content */
+/*   ALERT   */
+.modal-alert {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal-alert__block {
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-alert__box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.modal-alert__content {
+  padding: 30px;
+  vertical-align: middle;
+}
+
+.modal-alert__wrapper {
+  max-width: 300px;
+  background-color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+  
+}
+
+.modal-alert__inner {
+  padding: 20px;
+}
+
+.modal-alert__title {
+  font-size: 20px;
+  line-height:24px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+.modal-alert__buttons {
+  text-align: center;
+  border-top: 1px solid #dddddd;
+  height: 44px;
+}
+
+.modal-alert__buttons--2 .modal-alert__button{
+  width: 50%;
+}
+
+
+.modal-alert__buttons--2 .modal-alert__button:last-child:before {
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 1px;
+  background: #dddddd;
+  left: 0;
+}
+
+.modal-alert__button {
+  display: inline-block;
+  color: #3498db;
+  cursor: pointer;
+  font-weight: 600;
+  height: 44px;
+  font-size: 17px;
+  line-height: 44px;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
 }
 
 .m-0 {
