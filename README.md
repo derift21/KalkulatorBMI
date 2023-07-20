@@ -1,2 +1,2 @@
 **KALKULATOR BMI**
-- My Github Pages : https://github.com/derift21/
+- My Github Pages : https://derift21.github.io/KalkulatorBMI/
